@@ -1,0 +1,298 @@
+/* 
+
+
+Credit: www.cssmoban.com
+	1. General
+	2. login
+	3. create-account
+	4. forgot-password
+	5. Media Queries
+	6. home-driver
+
+	
+--------------------------------------------*/
+/* 1. General
+--------------------------------------------*/
+
+*, body {
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: normal;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*button*/
+.btn-info {
+    opacity: .8;
+    background: white;
+    color: #09F;
+}
+
+.btn-primary{
+    border-radius: 2px;
+    background-color: #39ADB4;
+    border: none;
+    color: white;
+}
+.btn-file{
+    border: 1px solid #39ADB4;
+    border-radius: 4px;
+    background: white;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.btn-file:hover{
+    background: #5bc0de;
+    opacity: .7;
+
+
+}
+
+
+
+/*输入框*/
+.form-control {
+    color: #5bc0de;
+    border-color: #5bc0de;
+
+
+}
+
+.form-control:hover {
+    color: #0d6aad;
+    border-color: #0d6aad;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+
+.control-wrapper {
+    position: relative;
+    padding-left: 30px;
+}
+
+.control-wrapper label.fa-label {
+    position: absolute;
+    left: 4px;
+    top: 6px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-horizontal .control-label {
+    margin-bottom: 10px;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th,
+.table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.form-list-container {
+    max-width: 600px;
+}
+
+.input-icon-container {
+    position: relative;
+}
+
+.input-icon-container .fa {
+    color: gray;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.input-icon-container input,
+.input-icon-container textarea {
+    padding-left: 30px;
+}
+#container{
+    border: 0px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #5bc0de;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.bg-gray {
+    background-color: #eee;
+}
+
+.bg-gray h1 {
+    color: rgb(74, 164, 180);
+}
+
+
+.font-size-small {
+    font-size: 0.8em;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group a {
+    line-height: 34px;
+}
+
+.fa {
+    font-size: 16px;
+}
+
+.fa.login-with {
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+.fa-medium {
+    font-size: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/*-------------------------------------
+2. login-form
+---------------------------------------*/
+.loign-form-1 {
+    max-width: 500px;
+}
+
+.loign-form-1 a {
+    color: gray;
+}
+
+.loign-form-1 a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.create-new {
+    color: #58B4BB;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+.create-new:hover {
+    color: #138892;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+
+/*-------------------------------------
+3. create-account
+---------------------------------------*/
+#border {
+    border: 2px solid #5bc0de;
+
+}
+
+.create-account {
+    background-color: #fff;
+    border: none;
+    max-width: 700px;
+}
+
+.create-account label {
+    font-weight: 400;
+}
+
+
+.radio-group {
+    margin-top: 30px;
+}
+
+.file {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    background: white;
+    border: 1px solid #1E88C7;
+    border-radius: 10px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.file input {
+    cursor: pointer;
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background:white;
+    border-color: #78C3F3;
+    color: #1E88C7;
+    text-decoration: none;
+}
+/*-------------------------------------
+4. forgot-password
+---------------------------------------*/
+.forgot-password-form {
+    background-color: #fff;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 30px;
+}
