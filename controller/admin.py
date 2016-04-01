@@ -108,7 +108,7 @@ def show_advter(account_ID):
         advter = adv_account.query.filter_by(account_ID=account_ID).first()
         return render_template('Management module/aduser.html', account_ID=account_ID, flag=advter.check_flag,
                                company=advter.company_name, amount=advter.adv_amount, name=advter.charge_name,
-                               phone=advter.phone)
+                               phone=advter.phone,remark=advter.remark)
 
 
 @admin_bp.route('/check_advter', methods=['GET'])
