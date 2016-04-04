@@ -7,6 +7,8 @@ TABLE OF CONTENT
 	2. Left Column
 	3. Right Column
 	4. main content
+    5.司机个人主页主体
+    6.司机安全中心
 ----------------------------------------------*/
 /* 1. Universal Styles
 ----------------------------------------------*/
@@ -50,9 +52,11 @@ nav li {
     list-style: none;
     text-transform: uppercase;
 }
-.nav-fix-top{
+
+.nav-fix-top {
     z-index: 1;
 }
+
 .site-header {
     z-index: 10;
 }
@@ -185,8 +189,6 @@ nav li {
     border-radius: 10px;
 }
 
-
-
 /* 2. Left Column
 -----------------------------*/
 .sidebar {
@@ -239,7 +241,6 @@ nav li {
     background-color: rgba(4, 152, 114, 0);
 }
 
-
 .form-control:focus {
     border-color: #5bc0de;
     outline: 0;
@@ -250,6 +251,7 @@ nav li {
     background-color: #39ADB4;
     color: white;
 }
+
 .form-control.highlight::-webkit-input-placeholder { /* WebKit browsers */
     color: #ccc;
 }
@@ -267,7 +269,6 @@ nav li {
 .form-control.highlight:-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #ccc;
 }
-
 
 .fa-search {
     height: 32px;
@@ -311,7 +312,8 @@ nav li {
 /* 3. Right Column
 ------------------------------*/
 .top-nav-container {
-    background-color: white;
+    /*background-color: rgba(204,255,255,1);*/
+    background: white;
     padding: 28px 50px;
     box-shadow: 0px 0px 2px 2px rgba(161, 159, 159, 0.18);
 }
@@ -322,19 +324,19 @@ nav li {
 }
 
 .top-nav a {
-    color: #7f7f7f;
+    color: darkgray;
     display: block;
     padding: 0 50px;
-    border-left: 2px solid #c5c5c5;
+    border-left: 2px solid black;
 }
 
 .top-nav li:last-child a {
-    border-right: 2px solid #c5c5c5;
+    border-right: 2px solid black;
 }
 
 .top-nav a:hover,
 .top-nav a.active {
-    color: #39ADB4;
+    color: black;
 }
 
 /* 4.Main Content Area */
@@ -459,44 +461,189 @@ nav li {
 
 /* 4. Main Content
 ------------------------------*/
-.advertisement-summit{
+.advertisement-summit {
     background: white;
 }
-.form-control{
+
+.form-control {
     margin-bottom: 20px;
 }
 
-.container{
+.container {
     border-radius: 8px;
-    border:2px solid #5bc0de;
-    width:80%;
-    margin:20px auto;
+    border: 2px solid #5bc0de;
+    width: 80%;
+    margin: 20px auto;
     padding: 20px 60px;
 }
 
-#btn-ad-summit{
+#btn-ad-summit {
     margin-bottom: 20px;
 
 }
+
 #btn-ad-summit:hover {
     background: #5bc0de;
     color: white;
 }
-.btn-primary{
+
+.btn-primary {
     background: #5bc0de;
     border: 1px solid #5bc0de;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background: white;
     color: #2e6da4;
 
 }
 
+/*========5.司机个人主页主体============*/
+.indivisual-info {
+    padding: 0 30px;
+    background: whitesmoke;
+    height: 173px;
+}
+
+.indivisual-left, .indivisual-right {
+    display: inline;
+}
+
+.indivisual-left {
+    float: left;
+    padding: 34px 0;
+}
+
+.indivisual-left img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    /*border: 1px solid black;*/
+
+}
+
+.indivisual-left .username p {
+    margin-left: 100px;
+    font-size: 20px;
+    line-height: 35px
+}
+
+.indivisual-left i {
+
+    margin: 8px 40px 0 0px;
+}
+
+.indivisual-right {
+    border-left: 1px dotted black;
+    padding: 34px 0;
+}
+
+.indivisual-right table {
+    padding-top: 30px;
+}
+
+.indivisual-right .btn {
+    width: 150px;
+    height: 80px;
+    font-size: 22px;
+    float: right;
+    margin-top: -15px;
+    transition: all 0.3s;
+}
+
+.indivisual-right .money-table {
+    font-size: 20px;
+
+}
+
+.indivisual-task .task-title {
+    font-size: 22px;
+    text-align: center;
+
+}
+
+.indivisual-ad .pagination li a{
+    padding: 10px 15px;
 
 
+}
 
+.indivisual-task .task-title li {
+    cursor: pointer;
+    padding-bottom: 13px;
+}
 
+.indivisual-task .task-title li:hover {
+    color: #5bc0de;
+}
 
+.indivisual-task .task-title .on {
+    border-bottom: 2px solid #5bc0de;
+    color: #5bc0de;
+}
 
+/*=============6.司机安全中心==============*/
+.indivisual-security-info {
+    padding: 40px 80px;
+    color: #9a9a9a;
+    font-size: 14px;
+    background-color: #f8f8f8;
+}
+
+.indivisual-security-info strong {
+    font-size: 20px;
+    color: #4c4c4c;
+    font-weight: 400;
+    margin-right: 22px;
+    /*display: block;*/
+}
+
+.indivisual-security-body {
+    background: #fff;
+    padding: 0 0 130px;
+}
+
+.security-list {
+    border-top: 1px solid #e6e6e6;
+}
+
+.security-list li {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    padding: 30px 20px 30px 65px;
+    position: relative;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.security-list li a {
+    position: absolute;
+    top: 50%;
+    display: block;
+    right: 20px;
+}
+
+.security-list li a:hover {
+    text-decoration: underline;
+
+}
+
+.security-list li i {
+    font-size: 24px;
+}
+
+.security-list li h4 {
+    color: #9a9a9a;
+    font-size: 14px;
+}
+
+.security-list li h4 strong {
+    font-size: 20px;
+    color: #4c4c4c;
+    font-weight: 400;
+    margin-right: 22px;
+    display: block;
+}
 
